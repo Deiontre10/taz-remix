@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import Nav from "~/components/Nav";
 
 export const meta: MetaFunction = () => {
   return [
@@ -10,6 +11,7 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div className="font-sans p-4">
+      <Nav />
       <h1 className="text-3xl">Hey Guys</h1>
       <p className="text-lg m-2">
         I am Taz, a full-stack developer and I love building things with Remix
